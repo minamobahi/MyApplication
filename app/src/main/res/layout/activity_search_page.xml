@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e3beed"
+    tools:context=".Search_page">
+    <TextView
+        android:id="@+id/tv_movitar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:layout_constraintVertical_bias="0.3"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="#7c12b6"
+
+        android:text="Movitar"
+        android:textColor="#f4e5f8"
+        android:textSize="30sp"/>
+
+    <EditText
+        android:id="@+id/ed_search"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="280dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#ffffff"
+        android:hint="Enter Movie title to search for..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:padding="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/iv_search"
+        app:layout_constraintTop_toBottomOf="@id/tv_movitar" />
+
+    <ImageView
+        android:id="@+id/iv_search"
+        android:layout_width="@android:dimen/app_icon_size"
+        android:layout_height="@android:dimen/app_icon_size"
+        android:layout_marginBottom="280dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="20dp"
+        android:background="#7c12b6"
+        android:padding="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/ed_search"
+        app:layout_constraintTop_toBottomOf="@id/tv_movitar" />
+
+</android.support.constraint.ConstraintLayout>
